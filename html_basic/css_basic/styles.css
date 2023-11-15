@@ -126,7 +126,6 @@ hr {
     border: none; 
 } 
 .button {
-    display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
     text-align: center;
@@ -144,7 +143,6 @@ hr {
 }
   
   footer {
-    
     background-color: #C70039;
     padding: 10px;
     text-align: center;
