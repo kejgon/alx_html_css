@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Helvetica', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+    /* Set a background color for the header */
+    .header {
+        background-color: #000;
+        /* You can change this color to your preference */
+    }
+
+    /* Center the content within the container */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Style the logo */
+    .header-logo img {
+        display: block;
+    }
+
+    /* Style the navigation menu */
+    .navbar-menu {
+        display: flex;
+    }
+
+    .nav {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav-item {
+        margin-right: 15px;
+        /* Adjust the spacing between menu items */
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: #fff;
+        /* Set the text color */
+        font-weight: bold;
+        transition: color 0.3s ease;
+        /* Add a smooth color transition effect */
+    }
+
+    .nav-link:hover {
+        color: #f00;
+        /* Change the color on hover */
+    }
+
+    .section-hero{
+        background-color: #000;
+        color: #fff;
+        padding: 50px;
+    }
+    .section-title{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .button{
+        text-decoration: none;
+        border: 1px solid red;
+        padding: 20px 10px;
+        color: #fff;
+    }
