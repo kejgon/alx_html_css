@@ -9,8 +9,8 @@
 }
 
 [class*='col-'] {
-    padding: 0; 
-    margin: 1rem; 
+    padding: 0; /* Padding has been removed as specified */
+    margin: 1rem; /* Margin is set to 1rem */
 }
 
 ul.row {
