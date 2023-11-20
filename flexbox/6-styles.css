@@ -1,0 +1,18 @@
+/* Your existing CSS */
+
+/* Navbar section */
+.nav {
+    display: flex; /* Add this line to the nav class selector */
+}
+
+/* Remove the display declaration from .nav .nav-item selector */
+.nav .nav-item {
+    /* Remove display: flex; */
+}
+
+/* Target .nav-item + .nav-item inside nav class */
+.nav .nav-item + .nav-item {
+    margin: 0 0 0 2rem; /* Move the margin declaration */
+}
+
+/* --nav-item-margin: 0 0 0 2rem; */
