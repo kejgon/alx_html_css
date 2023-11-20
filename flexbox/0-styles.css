@@ -11,13 +11,12 @@
 .row {
     display: flex; /* Add display flex to make children flex items */
 }
-
+/* 
 .row::after {
-    /* Remove the entire row::after declaration as specified in the task */
     content: "";
     clear: both;
     display: table;
-}
+} */
 
 [class*='col-'] {
     /* Remove the float: left */
