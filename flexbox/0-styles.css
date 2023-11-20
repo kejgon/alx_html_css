@@ -18,8 +18,9 @@
     display: table;
 } */
 
-/* [class*='col-'] {
+[class*='col-'] {
+    /* float:left */
   
-}  */
+} 
 
 /* Add any other styles as needed for your grid system */
