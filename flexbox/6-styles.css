@@ -7,12 +7,12 @@
 
 /* Remove the display declaration from .nav .nav-item selector */
 .nav .nav-item {
-    /* Remove display: flex; */
+     display: flex;
 }
 
 /* Target .nav-item + .nav-item inside nav class */
 .nav .nav-item + .nav-item {
-    /* margin: 0 0 0 2rem; */
+    margin: 0 0 0 2rem;
 }
 
 
