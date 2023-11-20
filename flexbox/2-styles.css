@@ -5,7 +5,10 @@
     padding: 0;
 }
 
-/* Your Existing CSS */
+
+.section-latest-news .row {
+
+}
 
 /* Section Latest news ============================= */
 /* Target the row class inside section-latest-news class */
