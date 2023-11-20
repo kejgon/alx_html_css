@@ -11,16 +11,11 @@
 .row {
     display: flex; /* Add display flex to make children flex items */
 }
-/* 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-} */
+
+
 
 [class*='col-'] {
-    float:left
-  
+flex-direction: row;  
 } 
 
 /* Add any other styles as needed for your grid system */
