@@ -12,7 +12,6 @@
 
 /* Target .nav-item + .nav-item inside nav class */
 .nav .nav-item + .nav-item {
-    margin: 0 0 0 2rem;
-}
+justify-content: flex-end;}
 
 
