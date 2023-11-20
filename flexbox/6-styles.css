@@ -10,8 +10,9 @@
     /* Remove display: flex; */
 }
 
-/* .nav .nav-item + .nav-item {
-    margin: 0 0 0 2rem; 
-} */
+/* Target .nav-item + .nav-item inside nav class */
+.nav .nav-item + .nav-item {
+    /* margin: 0 0 0 2rem; */
+}
 
-/* --nav-item-margin: 0 0 0 2rem; */
+
