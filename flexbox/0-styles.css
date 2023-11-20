@@ -12,10 +12,11 @@
     display: flex; /* Add display flex to make children flex items */
 }
 
+/* Remove the entire row::after declaration as specified in the task */
+
 [class*='col-'] {
     /* Remove the float: left */
     /* All elements should now appear the same as before using the float */
 }
 
 /* Add any other styles as needed for your grid system */
-
