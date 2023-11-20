@@ -1,17 +1,14 @@
-/* Your existing CSS */
 
-/* Navbar section */
 .nav {
-    display: flex; /* Add this line to the nav class selector */
+    display: flex; 
 }
 
-/* Remove the display declaration from .nav .nav-item selector */
 .nav .nav-item {
      display: flex;
 }
 
-/* Target .nav-item + .nav-item inside nav class */
 .nav .nav-item + .nav-item {
-justify-content: flex-start;}
+justify-content: flex-start;
+}
 
 
