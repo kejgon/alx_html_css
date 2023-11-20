@@ -18,9 +18,8 @@
     display: table;
 } */
 
-[class*='col-'] {
-    /* Remove the float: left */
-    /* All elements should now appear the same as before using the float */
-}
+/* [class*='col-'] {
+  
+}  */
 
 /* Add any other styles as needed for your grid system */
