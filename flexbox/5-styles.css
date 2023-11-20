@@ -1,3 +1,13 @@
+:root {
+    /* Check for the removal of the following custom variables */
+    --header-logo-position: value; /* Should be removed */
+    --header-logo-link-display: value; /* Should be removed */
+    --header-logo-link-top: value; /* Should be removed */
+    --header-logo-link-left: value; /* Should be removed */
+
+    /* Your other custom variables */
+}
+
 /* Your existing CSS */
 
 /* Header section */
@@ -13,12 +23,4 @@
     /* Remove these rules */
 }
 
-/* Variables section */
-/* Remove the following variables */
-/* --header-logo-position: value;
---header-logo-link-display: value;
---header-logo-link-position: value;
---header-logo-link-top: value;
---header-logo-link-left: value; */
 
-/* Add any other styles or variables as needed */
