@@ -9,8 +9,8 @@
 }
 
 [class*='col-'] {
-    padding: 0; /* Padding has been removed as specified */
-    margin: 1rem; /* Margin is set to 1rem */
+
+    justify-content: space-between;
 }
 
 ul.row {
