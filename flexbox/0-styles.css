@@ -1,13 +1,10 @@
-/* Reset CSS */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Your Existing CSS */
 
-/* Grid section */
 .row {
     display: flex; /* Add display flex to make children flex items */
 }

@@ -1,8 +1,21 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-
+/* Your Existing CSS */
 
 /* Section Latest news ============================= */
-.section-latest-news{
-
-    flex-direction: row-reverse
+/* Target the row class inside section-latest-news class */
+.section-latest-news .row {
+    flex-direction: row-reverse; /* Set flex-direction to row-reverse */
 }
+
+
+
+
+/*** 4. CARD ***/
+
+
