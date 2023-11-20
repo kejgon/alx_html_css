@@ -1,4 +1,21 @@
+/* Your existing CSS */
+
+/* Root selector */
+:root {
+    /* Check for the removal of the following custom variables */
+    --header-logo-position: value; /* Should be removed */
+    --header-logo-link-display: value; /* Should be removed */
+    --header-logo-link-top: value; /* Should be removed */
+    --header-logo-link-left: value; /* Should be removed */
+
+    /* Your other custom variables */
+}
+
+
 .header-container {
     display: flex;
     justify-content: space-between;
 }
+
+
+
