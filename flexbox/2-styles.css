@@ -6,12 +6,7 @@
 }
 
 
-.section-latest-news .row {
-
-}
-
 /* Section Latest news ============================= */
-/* Target the row class inside section-latest-news class */
 .section-latest-news .row {
     flex-direction: row-reverse; /* Set flex-direction to row-reverse */
 }
