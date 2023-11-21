@@ -70,6 +70,8 @@ body{
     padding: 10px 20px;
     border-radius: 20px;
     color: #fff;
+    box-shadow:  2px 4px rgba(0, 0, 0, 0.24);
+
 }
 .section-inner .button:hover {
     opacity: 0.9
@@ -327,13 +329,16 @@ body{
     border-radius: 20px;
     color: #fff;
     cursor: pointer;
-    opacity: 0.9
+    box-shadow:  2px 4px rgba(0, 0, 0, 0.24);
+
 
 }
 
 .contact-form button:hover {
     background-color: #FF6565;
     color: #fff;
+    opacity: 0.9
+
 }
 
 /* Mobile Styles */
