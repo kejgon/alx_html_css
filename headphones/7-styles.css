@@ -199,3 +199,162 @@ body{
     }
 }
 
+/* Results */
+.results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+    background-image: url("images/headphones_hero_2.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    color: #fff;
+}
+
+.section-header {
+    margin-bottom: 20px;
+}
+
+.section-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-result {
+    flex: 1; /* Distribute available space equally among all items */
+    position: relative;
+    margin: 5px; /* Adjust spacing between items */
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.card-icon-results {
+    width: 85%; /* Make the image fill the container */
+    height: auto;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg);
+    text-align: center;
+    color: #fff; /* Adjust text color */
+    padding: 10px;
+    opacity: 0.7;
+    transition: opacity 0.5s;
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    transform: rotateX(0deg) rotateY(0deg);
+    transition: transform 0.5s;
+}
+
+.card-description {
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+/* Animation, Scaling, Opacity, Rotation, Bouncing Styling */
+.card-result:hover .card-icon-results {
+    transform: scale(1.2);
+}
+
+.card-result:hover .card-overlay {
+    opacity: 1;
+}
+
+.card-result:hover .card-title {
+    transform: rotateX(360deg) rotateY(360deg);
+}
+
+.card-result:hover .card-description {
+    opacity: 1;
+}
+/* 820px Screen Styles */
+@media screen and (max-width: 820px) {
+    .card-result {
+        flex: 1 0 48%; /* Adjust the flex property for better responsiveness */
+        margin: 5px; /* Adjust spacing between items */
+    }
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 768px) {
+    .card-result {
+        flex: 1 0 48%; /* Adjust the flex property for better responsiveness */
+        margin: 5px; /* Adjust spacing between items */
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 480px) {
+    .card-result {
+        flex: 1 0 100%; /* Adjust the flex property for better responsiveness */
+        margin: 5px 0; /* Adjust spacing between items */
+    }
+
+    .card-icon-results {
+        width: 100%; /* Make the image fill the container */
+    }
+}
+
+
+/* Footer SECTION */
+.footer {
+    background-color: #071629;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.footer-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; /* For normal screens: Logo left, Social icons right */
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 160px;
+    max-height: 30px;
+    margin-bottom: 20px;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-icon {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+/* Mobile Styles */
+
+@media screen and (max-width: 480px) {
+    .footer-container {
+        flex-direction: column; /* For small screens: Arrange items in a column */
+        align-items: center;
+    }
+
+    .social-icon {
+        margin: 20px 10;
+    }
+    .copyright{
+        margin-top: 20px;
+    }
+}
+
+
+
