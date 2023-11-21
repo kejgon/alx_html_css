@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Helvetica', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.header {
+    background-image: url("images/headphones_hero_1.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    height: 750px;
+}
+.header-logo img {
+    display: block;
+}
+/* Style the navigation menu */
+.navbar-menu {
+    display: flex;
+}
+.nav {
+    list-style: none;
+    display: flex;
+}
+.nav-item {
+    margin-right: 15px;
+   /* Adjust the spacing between menu items */
+}
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+   /* Set the text color */
+    font-weight: bold;
+    transition: color 0.3s ease;
+   /* Add a smooth color transition effect */
+}
+.nav-link:hover {
+    color: #FF6565;
+   /* Change the color on hover */
+}
+.section-hero{
+    color: #fff;
+    padding: 50px;
+    text-align:center 
+}
+.section-title{
+    font-size: 30px;
+    margin: 200px 0 0 0;
+}
+.section-inner{
+    text-align:center;
+}
+.section-inner p{
+    margin: 50px 0;
+}
+.section-inner .button{
+    text-decoration: none;
+    background-color: #FF6565;
+    border: 1px solid #FF6565;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+}
+/* Center the content within the container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row 
+}
+
+/* Testimonials */
+.what-we-do-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.section-header {
+    margin-bottom: 20px;
+}
+
+.section-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.tagline {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center; /* Center text within the tagline */
+}
+
+.card-service {
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center; /* Center text within each card */
+}
+
+.card-icon {
+    width: 50px; /* Set a fixed width for the icons */
+    height: 50px; /* Set a fixed height for the icons */
+    margin-bottom: 10px; /* Adjust spacing between icon and title */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Adjust font size for better readability */
+}
+
+.card-description {
+    margin-top: 10px; /* Add margin between title and description */
+}
+
+
+/* Results */
+.results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    background-image: url("images/headphones_hero_2.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    color: #fff;
+
+
+}
+.section-header {
+    margin-bottom: 20px;
+}
+.section-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.card-result {
+    flex: 1; /* Distribute available space equally among all items */
+
+    position: relative;
+    margin: 5px; /* Adjust spacing between items */
+}
+
+.card-icon-results {
+    width: 50%; /* Make the image fill the container */
+    height: auto;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Adjust text color */
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 16px;
+}
+
+
+
+
+/* Mobile Styles */
+@media screen and (max-width: 780px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .header {
+        height: 950px;
+    }
+   
+    .section-title{
+        margin: 100px 0 0 0;
+    }
+}
+/* Mobile Styles */
+@media screen and (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .header {
+        height: 850px;
+    }
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 20px; /* Adjust as needed */
+        right: 20px; /* Adjust as needed */
+        cursor: pointer;
+    }
+    .section-title{
+        margin: 100px 0 0 0;
+    }
+}
