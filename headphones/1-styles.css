@@ -179,6 +179,63 @@ body{
 }
 
 
+/* Contact Us SECTION */
+.contact-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.contact-form {
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: none; /* Remove the default border */
+    border-bottom: 1px solid #000000; /* Add a bottom border */
+    outline: none; /* Remove the default input focus outline */
+    position: relative;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #000000; /* Placeholder text color */
+}
+
+.contact-form input::before,
+.contact-form textarea::before {
+    content: attr(data-label);
+    display: block;
+    position: absolute;
+    right: 10px; /* Adjust the right position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777; /* Label text color */
+}
+
+.contact-form button {
+    background-color: #FF6565;
+    border: 1px solid #FF6565;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #fff;
+    color: #FF6565;
+}
+
+
 
 
 /* Mobile Styles */
