@@ -337,6 +337,7 @@ body{
 .contact-form button:hover {
     background-color: #FF6565;
     color: #fff;
+    opacity: 0.9
 }
 
 /* Mobile Styles */
