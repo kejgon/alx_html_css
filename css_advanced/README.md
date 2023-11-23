@@ -1,4 +1,4 @@
-# Advanced CSS Projec
+# Advanced CSS Project
 
 ## Description
 
