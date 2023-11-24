@@ -1,16 +1,20 @@
-:root{
-    --main-color: #C271FF}
+:root {
+    --main-color: #C271FF
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
-    font-family:'Helvetica', sans-serif;
+
+body {
+    font-family: 'Helvetica', sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
-/* Common styles for all screen sizes */
+
+/* HEADER SECTION */
 header {
     background-image: url("images/Object.png");
     background-size: cover;
@@ -46,6 +50,7 @@ header {
     color: #C271FF;
 }
 
+/* HERO SECTION */
 .section-hero {
     color: #fff;
     padding: 50px;
@@ -85,6 +90,7 @@ header {
     opacity: 0.9;
 }
 
+/* CONTAINER */
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -95,7 +101,7 @@ header {
     flex-direction: row;
 }
 
-/* Learn from the pros section */
+/* LEARN FROM PROS SECTION */
 .learn-from-pros {
     text-align: center;
     color: #fff;
@@ -112,13 +118,15 @@ header {
 }
 
 span {
+    font-size: 2rem;
     color: var(--main-color);
 }
 
 .learn-from-pros .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Adjust as needed */
+    justify-content: space-around;
+    /* Adjust as needed */
 }
 
 .learn-from-pros .row {
@@ -136,7 +144,6 @@ span {
 .learn-from-pros img {
     width: 100px;
     border-radius: 50%;
-    border: 2px solid #C271FF;
     margin-bottom: 10px;
 }
 
@@ -203,16 +210,16 @@ span {
     }
 }
 
-/* Common styles for all screen sizes */
+/* TESTIMONIAL SECTION */
 .testimonial {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--main-color); /* Adjust the background color as needed */
+    background-color: var(--main-color);
+    /* Adjust the background color as needed */
     padding: 100px 0;
     text-align: center;
-    color:#fff
-
+    color: #fff
 }
 
 .testimonial .container {
@@ -221,7 +228,8 @@ span {
 }
 
 .testimonial-image img {
-    width: 100px; /* Adjust the image width as needed */
+    width: 100px;
+    /* Adjust the image width as needed */
     border-radius: 50%;
     margin-right: 20px;
 }
@@ -229,7 +237,7 @@ span {
 .testimonial-text {
     text-align: left;
     margin-left: 30px;
-    font-size:20px;
+    font-size: 20px;
     font-weight: normal;
 }
 
@@ -261,3 +269,250 @@ span {
         margin-bottom: 0;
     }
 }
+
+/* MOST POPULAR SECTION */
+.most-popular {
+    text-align: center;
+    color: #000;
+    /* Adjust the text color as needed */
+    padding: 50px;
+}
+
+.most-popular h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.most-popular .section-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.most-popular .section-body .row {
+    position: relative;
+    margin: 10px;
+    padding: 20px;
+    text-align: left;
+    max-width: 300px;
+}
+
+.most-popular .section-body .row .charactor {
+    width: 100%;
+}
+
+.most-popular .section-body .row p {
+    color: #919191
+}
+
+.most-popular .section-body .row img {
+    height: auto;
+    border-radius: 5px;
+}
+
+.play {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+.inner-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+.inner-row .thumbs-img {
+    width: 30px;
+}
+
+.inner-row h5 {
+    color: var(--main-color);
+}
+
+.most-popular .section-body .row .inner-row p {
+    margin: 0;
+    color: var(--main-color);
+}
+
+/* Responsive Styles */
+@media screen and (min-width: 768px) {
+    .section-body {
+        justify-content: space-between;
+    }
+
+    .row {
+        flex: 1;
+    }
+}
+
+
+/* MEMBERSHIP SECTION */
+.membership {
+    text-align: center;
+    color: #fff;
+    background-color: #071629;
+    padding: 50px;
+}
+
+.membership h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.section-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.members {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 200px;
+}
+
+.members h4 {
+    margin: 25px 0;
+    font-size: 1rem;
+}
+
+.members p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.button {
+    text-decoration: none;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.24);
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+
+/* FAQ SECTION*/
+.faq {
+    text-align: center;
+    color: #000; /* Adjust the text color as needed */
+    padding: 50px;
+}
+
+.faq h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.faq-section-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.faq-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.faq-inner-row {
+    flex: 0 0 100%; /* Full width for small screens */
+    max-width: 400px;
+    margin: 10px;
+    padding: 20px;
+    text-align: left;
+}
+
+.faq-inner-row h3 {
+    margin-bottom: 10px;
+}
+
+.faq-inner-row p {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.5; /* Improved line height for better readability */
+}
+
+/* Responsive Styles */
+@media screen and (min-width: 768px) {
+ 
+    .faq-inner-row {
+        flex: 0 0 48%; /* Two columns for screens with a width of 768 pixels or more */
+        margin: 0 auto;   
+
+    }
+}
+
+/* Mobile-specific Styles */
+@media screen and (max-width: 480px) {
+    .faq-inner-row {
+        flex: 0 0 100%; /* Full width for small screens */
+    }
+}
+
+
+
+/* Footer SECTION */
+.footer {
+    background-color: #071629;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.footer-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; /* For normal screens: Logo left, Social icons right */
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 160px;
+    max-height: 30px;
+    margin-bottom: 20px;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-icon {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+/* Mobile Styles */
+
+@media screen and (max-width: 480px) {
+    .footer-container {
+        flex-direction: column; /* For small screens: Arrange items in a column */
+        align-items: center;
+    }
+
+    .social-icon {
+        margin: 20px 10;
+    }
+    .copyright{
+        margin-top: 20px;
+    }
+}
+
+
+
