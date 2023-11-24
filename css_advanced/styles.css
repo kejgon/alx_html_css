@@ -1,0 +1,263 @@
+:root{
+    --main-color: #C271FF}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Helvetica', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+/* Common styles for all screen sizes */
+header {
+    background-image: url("images/Object.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.header-logo img {
+    display: block;
+}
+
+.navbar-menu {
+    display: flex;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #C271FF;
+}
+
+.section-hero {
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 100px;
+    margin: 100px 0 0 0;
+}
+
+.section-hero p {
+    display: inline;
+    line-height: 1.5;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.section-hero a {
+    display: block;
+}
+
+.section-hero .button {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-decoration: none;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.section-hero .button:hover {
+    opacity: 0.9;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* Learn from the pros section */
+.learn-from-pros {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    padding: 50px;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 300;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.learn-from-pros .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust as needed */
+}
+
+.learn-from-pros .row {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.learn-from-pros .row p {
+    font-style: italic;
+}
+
+.learn-from-pros img {
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid #C271FF;
+    margin-bottom: 10px;
+}
+
+.learn-from-pros h3,
+.learn-from-pros p {
+    margin: 0;
+}
+
+/* Media query for tablets */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin-right: 0;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .header {
+        height: auto;
+    }
+
+    .section-title {
+        margin: 50px 0 0 0;
+    }
+
+    .section-hero p {
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    .section-hero .button {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .learn-from-pros .container {
+        flex-direction: column;
+    }
+
+    .learn-from-pros .row {
+        width: 100%;
+    }
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 480px) {
+    .section-title {
+        font-size: 48px;
+    }
+
+    .section-hero p {
+        font-size: 16px;
+    }
+
+    .section-hero .button {
+        width: 100%;
+    }
+}
+
+/* Common styles for all screen sizes */
+.testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color); /* Adjust the background color as needed */
+    padding: 100px 0;
+    text-align: center;
+    color:#fff
+
+}
+
+.testimonial .container {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-image img {
+    width: 100px; /* Adjust the image width as needed */
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.testimonial-text {
+    text-align: left;
+    margin-left: 30px;
+    font-size:20px;
+    font-weight: normal;
+}
+
+.testimonial blockquote {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.testimonial q {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+/* Responsive Styles */
+@media screen and (min-width: 768px) {
+    .testimonial .container {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    .testimonial-image img {
+        margin-bottom: 0;
+    }
+}
